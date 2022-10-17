@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a=[];
+    let b = prompt('Nhập vào một thành phần của mảng ký tự');
+    while (b!==''){
+        a.push(b);
+        b = prompt('Nhập vào một thành phần của mảng ký tự');
+    }
+    let c = prompt('Nhập vào ký tự');
+    let cotrongmang = 0;
+    for (let i = 0; i < a.length - 1; i++) {
+        if (c == a[i]) {
+            cotrongmang = 1;
+            break;
+        }
+    }
+    if (cotrongmang == 1) {
+        document.write(c + ' có trong mảng')
+    } else document.write(c + ' không có trong mảng')
+</script>
+</html>

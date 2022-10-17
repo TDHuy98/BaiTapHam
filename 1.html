@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<form action="1.html"></form>
+<script>
+    let a = prompt('nhập vào một ký tự');
+    while (a.length!==1){a=prompt('nhập vào một ký tự')};
+    function kiemtraso(x) {
+        if (isNaN(x)==false) {
+            document.write(x + ' Là số')
+        } else document.write(x + ' Không là số')
+    }
+    kiemtraso(a)
+</script>
+</body>
+</html>
